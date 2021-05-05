@@ -1,0 +1,49 @@
+.hero {
+    position: relative;
+
+    .container {
+        overflow-x: hidden;
+
+        .prev-btn, .next-btn {
+            cursor: pointer;
+            position: absolute;
+            top: 300px;
+            font-size: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: transparent;
+            color: white;
+            border: none;
+            z-index: 99;
+            transition: color 0.3s ease;
+    
+            &:hover {
+                color: grey;
+            }
+        }
+    
+        .prev-btn {
+            left: 100px;
+        }
+    
+        .next-btn {
+            right: 100px;
+        }
+    }
+
+    &.no-show {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 1360px) {
+    .hero {
+        .container {
+            .prev-btn, .next-btn {
+                display: none;
+            }
+        }
+    }
+}

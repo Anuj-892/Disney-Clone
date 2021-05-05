@@ -1,0 +1,45 @@
+.genre {
+    color: white;
+    .carousel {
+        margin-top: 1em;
+        display: flex;
+        align-items: flex-start;
+        justify-content: start;
+        flex-wrap: wrap;
+        gap: 10px;
+        img {
+            cursor: pointer;
+            width: 10rem;
+            border-radius: 5px;
+            transition: transform .3s ease;
+          
+            &:hover {
+                transform:scale(.9)
+            }
+        }
+     }
+}
+
+@media screen and (max-width: 1122px) {
+    .genre {
+        .carousel {
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+@media screen and (max-width: 365px) {
+    .genre {
+            text-align: center;
+
+            h1 {
+                font-size: 2rem;
+            }
+            .carousel {
+                img {
+                    width: 15rem;
+                }
+            }
+    }
+}
